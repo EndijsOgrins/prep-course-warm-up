@@ -6,7 +6,7 @@ function tidyUpString(str: string): string {
 
 // You are allowed to edit this function
 function capitalise(str: string): string {
-  return str.charAt(0).toUpperCase() + str.slice(1);
+  return str[0].toUpperCase() + str.substring(1);
 }
 
 const mentors = ["/Daniel ", "irina ", " Gordon", "ashleigh "];

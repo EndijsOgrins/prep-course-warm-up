@@ -14,9 +14,7 @@ export {};
 
 // You are allowed to change only this function
 function calculateSalesTax(price: number): number {
-  const salesTaxPercentage = 0.21;
-  const salesTax = price * salesTaxPercentage;
-  return salesTax;
+  return price * 0.21;
 }
 
 const product = "You don't know JS";
