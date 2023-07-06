@@ -1,11 +1,15 @@
 export {};
 
-/**
- * Create a function called isBlank, which checks if passed string is blank or not
- */
+function isBlank(str: string | null): boolean {
+  if (str === null || str.trim() === "") {
+    return true;
+  } else {
+    return false;
+  }
+}
 
-console.log(isBlank(null)); // Expected output: true
-console.log(isBlank("")); // Expected output: true
-console.log(isBlank(" ")); // Expected output: true
-console.log(isBlank("abc")); // Expected output: false
-console.log(isBlank(" abc ")); // Expected output: false
+console.log(isBlank(null)); // Output: true
+console.log(isBlank("")); // Output: true
+console.log(isBlank(" ")); // Output: true
+console.log(isBlank("abc")); // Output: false
+console.log(isBlank(" abc ")); // Output: false

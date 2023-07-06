@@ -7,9 +7,21 @@ export {};
  *  - https://javascript.info/while-for#the-for-loop
  *  - https://www.youtube.com/watch?v=wxds6MAtUQ0 (Intro to Programming: Loops)
  *  - https://www.youtube.com/watch?v=Kn06785pkJg (JavaScript Loops Made Easy)
-*/
+ */
 
-function goThroughNumbers(start, end) {}
+function goThroughNumbers(start: number, end: number) {
+  if (start <= end) {
+    for (let i = start; i <= end; i++) {
+      if (i % 2 === 0) {
+        console.log(i + " - even");
+      } else {
+        console.log(i + " - odd");
+      }
+    }
+  } else {
+    console.log("invalid input");
+  }
+}
 
 goThroughNumbers(3, 7);
 /* Expected output:

@@ -7,5 +7,11 @@ export {};
  *  - https://www.w3schools.com/js/js_arrays.asp
  *  - https://javascript.info/array
  */
+function stringToArray(strArr: string[]): string[] {
+  // Assuming strArr contains only one element
+  const name = strArr[0];
+  const nameArray = name.split(" ");
+  return nameArray;
+}
 
 console.log(stringToArray(["John Doe"])); // Expected output: ['John', 'Doe']
