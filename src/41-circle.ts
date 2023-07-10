@@ -28,8 +28,12 @@ class Circle {
     this.radius = radius;
   }
 
+  format(n: number): string {
+    return n.toFixed(2);
+  }
+
   area() {
-    return Math.PI * this.radius * this.radius;
+    return Math.PI * Math.pow(this.radius, 2);
   }
 
   perimeter() {
@@ -38,5 +42,5 @@ class Circle {
 }
 
 const c = new Circle(3);
-console.log("Area =", c.area()); // Expected output: Area = 28.27
-console.log("Perimeter =", c.perimeter()); // Expected output: Perimeter = 18.85
+console.log("Area =", c.format(c.area())); // Expected output: Area = 28.27
+console.log("Perimeter =", c.format(c.perimeter())); // Expected output: Perimeter = 18.85
